@@ -7,7 +7,7 @@ import Tunnel from "./Tunnel";
 export default function App() {
   const { location } = useAuth();
 
-  if (location === "GATE") return <Entrance />;
+  if (location === "ENTRANCE") return <Entrance />;
   if (location === "TABLET") return <Tablet />;
   return <Tunnel />;
 }
